@@ -5,7 +5,7 @@
     <section class="sidebarBox">
         <div class="boxContent">
             <ul>
-                <li><a href="https://wissensportal.codevoyage.de/index.php?snippet=hello-world">Hello World!</a></li>
+                <li><a href="https://wissensportal.codevoyage.de/index.php?snippet=hallo-welt">Hello World!</a></li>
                 <li><a href="https://wissensportal.codevoyage.de/index.php?snippet=mathematische-operatoren">Mathematische Operatoren</a></li>
                 <li><a href="https://wissensportal.codevoyage.de/index.php?snippet=strings-wieder-verschoenern">Strings wieder verschönern</a></li>
                 <li><a href="https://wissensportal.codevoyage.de/index.php?snippet=werte-in-strings-grossschreiben">Werte in Strings großschreiben</a></li>
