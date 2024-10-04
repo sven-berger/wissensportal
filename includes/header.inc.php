@@ -18,7 +18,7 @@
         <?php
             $snippetName = $_GET['snippet'];
             $title = getSnippetTitle($connection, $snippetName);
-            echo $title;
+            echo $title . " | " . $bereich;
         ?>
     <?php else: ?>
         <?php echo $pageTitle; ?>
@@ -40,7 +40,7 @@
         <?php
             $snippetName = $_GET['snippet'];
             $title = getSnippetTitle($connection, $snippetName);
-            echo $title . " | " . $bereich;
+            echo $title;
         ?>
     <?php else: ?>
         <?php 
