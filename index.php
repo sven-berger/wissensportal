@@ -5,6 +5,7 @@
 ?>
     
 <?php if (isset($_GET['snippet'])): ?>
+
     <?php
         $snippetName = $_GET['snippet'];
         $sql = "SELECT * FROM snippets WHERE url = :url";
@@ -27,18 +28,18 @@
     ?>
 
 <?php if (!empty($phpSnippet)): ?>
-<h3 class="section-title">PHP</h3>
-<pre><code class="language-php"><?php echo $phpSnippet; ?></code></pre>
+    <h3 class="section-title">PHP</h3>
+    <pre><code class="language-php"><?php echo $phpSnippet; ?></code></pre>
 <?php endif; ?>
 
 <?php if (!empty($pythonSnippet)): ?>
-<h3 class="section-title">Python</h3>
-<pre><code class="language-python"><?php echo $pythonSnippet; ?></code></pre>
+    <h3 class="section-title">Python</h3>
+    <pre><code class="language-python"><?php echo $pythonSnippet; ?></code></pre>
 <?php endif; ?>
 
 <?php if (!empty($javascriptSnippet)): ?>
-<h3 class="section-title">JavaScript</h3>
-<pre><code class="language-javascript"><?php echo $javascriptSnippet; ?></code></pre>
+    <h3 class="section-title">JavaScript</h3>
+    <pre><code class="language-javascript"><?php echo $javascriptSnippet; ?></code></pre>
 <?php endif; ?>
 
 <section class="section">
@@ -49,9 +50,11 @@
 </section>
 
 <?php else: ?>
+
     <? include "lib/index.lib.php"; ?>
-<?php endif; ?>
     
+<?php endif; ?>
+
 <?php    
     require_once ($_SERVER['DOCUMENT_ROOT'] . "/includes/footer.inc.php");
 ?>
