@@ -44,15 +44,12 @@
 
 <section class="section">
     <div class="sectionContent">
-        <a href="https://wissensportal.codevoyage.de/acp/edit.php?id=<?php echo $snippet['id']; ?>">Bearbeiten</a> |
-        <a href="https://wissensportal.codevoyage.de/acp/delete.php?id=<?php echo $snippet['id']; ?>">Löschen</a>
+        <a href="https://wissensportal.codevoyage.de/acp/edit.php?id=<?php echo $snippet['id']; ?>">Bearbeiten</a> | <a href="https://wissensportal.codevoyage.de/acp/delete.php?id=<?php echo $snippet['id']; ?>">Löschen</a>
     </div>
 </section>
 
 <?php else: ?>
-
     <? include "lib/index.lib.php"; ?>
-    
 <?php endif; ?>
 
 <?php    
