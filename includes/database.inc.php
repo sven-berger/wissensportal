@@ -2,7 +2,7 @@
 
 $dsn = "mysql:host=localhost;dbname=wissensportal_system;";
 $username = "wissensportal_system";
-$password = "brckEsTlpx";
+$password = "#%5TknX2";
 
 try {
     $connection = new PDO($dsn, $username, $password);
