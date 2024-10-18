@@ -1,4 +1,4 @@
 <?php
-	$vorname = "SvEN OLivEr";
-	echo "Hallo " . strtolower($vorname);
+$vorname = "SvEN OLivEr";
+echo "Hallo " . strtolower($vorname);
 ?>
