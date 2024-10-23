@@ -2,7 +2,7 @@
 
 $bereich = 'Administrationsbereich';
 $pageTitle = 'Snippet abschicken';
-require_once ($_SERVER['DOCUMENT_ROOT'] . "/includes/header.inc.php");
+require_once ($_SERVER['DOCUMENT_ROOT'] . "/acp/includes/header.inc.php");
 
 $title = $_POST['title'];
 $description = $_POST['description'];
