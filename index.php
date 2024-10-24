@@ -30,7 +30,9 @@
     ?>
 
 <?php if (!empty($mitteilungSnippet)): ?>
-    <?php echo $mitteilungSnippet; ?>
+    <div class="mitteilungSnippet">
+        <?php echo $mitteilungSnippet; ?>
+    </div>
 <?php endif; ?>
 
 <?php if (!empty($phpSnippet)): ?>
