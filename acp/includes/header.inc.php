@@ -29,5 +29,11 @@
 <div class="main">
     <div class="content">
         <h2><?php echo $pageTitle; ?></h2>
+        <?php if (!empty($mitteilungSnippet)): ?>
+    <div class="mitteilungSnippet">
+        <h2>Ein Hinweis in eigener Sache:</h2>
+        <?php echo $mitteilungSnippet; ?>
+    </div>
+<?php endif; ?>
         <section class="section">
             <div class="sectionContent">
