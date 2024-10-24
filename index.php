@@ -21,7 +21,7 @@
             $php_snippet_alternativ = htmlspecialchars($snippet['php_snippet_alternativ']);
             $pythonSnippet = htmlspecialchars($snippet['python_snippet']);
             $javascriptSnippet = htmlspecialchars($snippet['javascript_snippet']);
-            $mitteilungSnippet = htmlspecialchars($snippet['mitteilung_snippet']);
+            $mitteilungSnippet = $snippet['mitteilung_snippet'];
         } else {
             echo "<section class='section'><div class='sectionContent'>Snippet nicht gefunden oder keine Übereinstimmung.</div></section>";
             require_once ($_SERVER['DOCUMENT_ROOT'] . "/includes/footer.inc.php");
@@ -32,7 +32,7 @@
 <?php if (!empty($mitteilungSnippet)): ?>
     <div class="mitteilungSnippet">
         <h2>Ein Hinweis in eigener Sache:</h2>
-        <?php echo $mitteilungSnippet; ?>
+        <p><?php echo $mitteilungSnippet; ?></p>
     </div>
 <?php endif; ?>
 
