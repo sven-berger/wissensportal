@@ -24,7 +24,7 @@
                 <li><a href="https://wissensportal.codevoyage.de/index.php?snippet=einfache_r-array_liste">Einfache(r) Array / Liste</a></li>
                 <li><a href="https://wissensportal.codevoyage.de/index.php?snippet=laenge-des-arrays_der-liste">Länge des Arrays / der Liste</a></li>
                 <li><a href="https://wissensportal.codevoyage.de/index.php?snippet=array_liste-bearbeiten">Array / Liste bearbeiten</a></li>
-                <li><a href="https://wissensportal.codevoyage.de/index.php?snippet=kleinste-und-groeßte-zahl-im-array_in-der-liste">Kleinste und Größte Zahl im Array / in der Liste</a></li>
+                <li><a href="https://wissensportal.codevoyage.de/index.php?snippet=kleinste-und-groesste-zahl-aus-array_aus-der-liste">Kleinste und größte Zahl aus dem Array / der Liste</a></li>
                 <li><a href="https://wissensportal.codevoyage.de/index.php?snippet=zahlen-im-array_in-der-liste-zusammenrechnen">Zahlen im Array / in der Liste zusammenrechnen</a></li>
                 <li><a href="https://wissensportal.codevoyage.de/index.php?snippet=arrays_listen-sortieren">Arrays / Listen sortieren</a></li>
             </ul>
