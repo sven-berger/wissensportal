@@ -63,7 +63,8 @@ try {
     <textarea name="php_snippet"><?php echo htmlspecialchars($snippet['php_snippet']); ?></textarea><br>
     
     <label for="php_snippet_alternativ">PHP Snippet (Alternative Syntax):</label>
-    <textarea name="php_snippet_alternativ"></textarea><br>
+    <textarea name="php_snippet_alternativ"><?php echo htmlspecialchars($snippet['php_snippet_alternativ']); ?></textarea><br>
+
 
     <label for="python_snippet">Python Snippet:</label>
     <textarea name="python_snippet"><?php echo htmlspecialchars($snippet['python_snippet']); ?></textarea><br>
