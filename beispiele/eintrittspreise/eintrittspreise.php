@@ -1,5 +1,6 @@
 <?php
 $age = 18;
+
 if ($age <= 6 || $age >= 60) {
     echo "Eintritt kostenlos!";
 } elseif ($age >= 7 && $age <= 18) {
