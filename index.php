@@ -31,6 +31,7 @@
 
 <?php if (!empty($mitteilungSnippet)): ?>
     <div class="mitteilungSnippet">
+        <h2>Ein Hinweis in eigener Sache:</h2>
         <?php echo $mitteilungSnippet; ?>
     </div>
 <?php endif; ?>
