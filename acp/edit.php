@@ -37,7 +37,7 @@ try {
             ':id' => $id
         ]);
 
-        header("Location: https://wissensportal.codevoyage.de/index.php?id=" . $snippet['id']);
+        header("Location: https://wissensportal.codevoyage.de/index.php?id=snippet=" . $snippet['id']);
         exit;
     }
     
