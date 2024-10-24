@@ -26,7 +26,7 @@ try {
         $javascript_snippet = $_POST['javascript_snippet'];
         $mitteilung_snippet = $_POST['mitteilung_snippet'];
 
-        $sql = "UPDATE snippets SET title = :title, url = :url, description = :description, php_snippet = :php_snippet, php_snippet_alternativ = :php_snippet_alternativ, python_snippet = :python_snippet, javascript_snippet = :javascript_snippet, , mitteilung_snippet = :mitteilung_snippet WHERE id = :id";
+        $sql = "UPDATE snippets SET title = :title, url = :url, description = :description, php_snippet = :php_snippet, php_snippet_alternativ = :php_snippet_alternativ, python_snippet = :python_snippet, javascript_snippet = :javascript_snippet, mitteilung_snippet = :mitteilung_snippet WHERE id = :id";
         $stmt = $connection->prepare($sql);
         $stmt->execute([
             ':title' => $title,
