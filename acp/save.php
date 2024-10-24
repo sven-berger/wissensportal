@@ -27,7 +27,7 @@ $stmt->execute([
 ]);
 
 
-header("Location: https://wissensportal.codevoyage.de/index.php?snippet=" . $snippet['url']);
+header("Location: https://wissensportal.codevoyage.de/index.php");
 
 require_once ($_SERVER['DOCUMENT_ROOT'] . "/includes/footer.inc.php");
 ?>
