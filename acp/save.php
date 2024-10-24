@@ -13,7 +13,7 @@ $python_snippet = $_POST['python_snippet'];
 $javascript_snippet = $_POST['javascript_snippet'];
 
 
-$sql = "INSERT INTO snippets (url, title, description, php_snippet, python_snippet, javascript_snippet) 
+$sql = "INSERT INTO snippets (url, title, description, php_snippet, php_snippet_alternativ, python_snippet, javascript_snippet) 
         VALUES (:url, :title, :description, :php_snippet, :php_snippet_alternativ, :python_snippet, :javascript_snippet)";
 $stmt = $connection->prepare($sql);
 $stmt->execute([
