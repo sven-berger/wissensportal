@@ -1,7 +1,7 @@
 <?php
-$eingabe = 15;
-while ($eingabe !== 7) {
-    if ($eingabe === 7) {
+$eingabe = 56431;
+while ($eingabe !== 3545245) {
+    if ($eingabe === 3545245) {
         echo "<p>Herzlichen Glückwunsch, du hast gewonnen!</p>";
         break;
     } else {

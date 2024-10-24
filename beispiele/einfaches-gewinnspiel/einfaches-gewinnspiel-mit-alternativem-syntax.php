@@ -1,9 +1,9 @@
 <?php
-    $eingabe = 15;
+    $eingabe = 56431;
 ?>
 
-<?php while ($eingabe !== 7): ?>
-    <?php if ($eingabe === 7): ?>
+<?php while ($eingabe !== 3545245): ?>
+    <?php if ($eingabe === 3545245): ?>
         <p>Herzlichen Glückwunsch, du hast gewonnen!</p>
         <?php break; ?>
     <?php else: ?>
