@@ -24,13 +24,14 @@ try {
         $python_snippet = $_POST['python_snippet'];
         $javascript_snippet = $_POST['javascript_snippet'];
 
-        $sql = "UPDATE snippets SET title = :title, url = :url, description = :description, php_snippet = :php_snippet, python_snippet = :python_snippet, javascript_snippet = :javascript_snippet WHERE id = :id";
+        $sql = "UPDATE snippets SET title = :title, url = :url, description = :description, php_snippet = :php_snippet, php_snippet_alternativ = :php_snippet_alternativ, python_snippet = :python_snippet, javascript_snippet = :javascript_snippet WHERE id = :id";
         $stmt = $connection->prepare($sql);
         $stmt->execute([
             ':title' => $title,
             ':url' => $url,
             ':description' => $description,
             ':php_snippet' => $php_snippet,
+            ':php_snippet_alternativ' => $php_snippet,
             ':python_snippet' => $python_snippet,
             ':javascript_snippet' => $javascript_snippet,
             ':id' => $id
@@ -59,6 +60,9 @@ try {
 
     <label for="php_snippet">PHP Snippet:</label>
     <textarea name="php_snippet"><?php echo htmlspecialchars($snippet['php_snippet']); ?></textarea><br>
+    
+    <label for="php_snippet">PHP Snippet (Alternative Syntax):</label>
+    <textarea name="php_snippet_alternativ"></textarea><br>
 
     <label for="python_snippet">Python Snippet:</label>
     <textarea name="python_snippet"><?php echo htmlspecialchars($snippet['python_snippet']); ?></textarea><br>

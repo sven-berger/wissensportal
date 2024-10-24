@@ -18,6 +18,7 @@
             $title = htmlspecialchars($snippet['title']);
             $description = htmlspecialchars($snippet['description']);
             $phpSnippet = htmlspecialchars($snippet['php_snippet']);
+            $php_snippet_alternativ = htmlspecialchars($snippet['php_snippet_alternativ']);
             $pythonSnippet = htmlspecialchars($snippet['python_snippet']);
             $javascriptSnippet = htmlspecialchars($snippet['javascript_snippet']);
         } else {
@@ -30,6 +31,11 @@
 <?php if (!empty($phpSnippet)): ?>
     <h3 class="section-title">PHP</h3>
     <pre><code class="language-php"><?php echo $phpSnippet; ?></code></pre>
+<?php endif; ?>
+
+<?php if (!empty($php_snippet_alternativ)): ?>
+    <h3 class="section-title">PHP (Alternative Syntax)</h3>
+    <pre><code class="language-php"><?php echo $php_snippet_alternativ; ?></code></pre>
 <?php endif; ?>
 
 <?php if (!empty($pythonSnippet)): ?>

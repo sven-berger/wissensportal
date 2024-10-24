@@ -17,6 +17,9 @@
     <label for="php_snippet">PHP Snippet:</label>
     <textarea name="php_snippet"></textarea><br>
 
+    <label for="php_snippet">PHP Snippet (Alternative Syntax):</label>
+    <textarea name="php_snippet_alternativ"></textarea><br>
+
     <label for="python_snippet">Python Snippet:</label>
     <textarea name="python_snippet"></textarea><br>
 
