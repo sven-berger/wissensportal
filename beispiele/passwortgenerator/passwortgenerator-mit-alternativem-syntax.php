@@ -4,21 +4,23 @@
         <button type="submit">Passwort generieren</button>
 </form>
 
-<?php
-if (isset($_GET['laenge'])) {
-    $laenge = intval($_GET['laenge']);
-    if ($laenge < 1 || $laenge > 81) {
+<?php if (isset($_GET['laenge'])): ?>
+    <?php $laenge = intval($_GET['laenge']); ?>
+    <?php if ($laenge < 1 || $laenge > 81): ?>
         die("Ungültige Länge. Bitte gib eine Zahl zwischen 1 und 81 ein.");
-    } else {
-        $kleine_buchstaben = "abcdefghijklmnopqrstuvwxyz";
-        $grosse_buchstaben = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        $zahlen = "0123456789";
-        $symbole = "!@#$%^&*()_-+=?><[]";
-        $zusammengesetzt = $kleine_buchstaben . $grosse_buchstaben . $zahlen . $symbole;
-        $passwort = substr(str_shuffle($zusammengesetzt), 0, $laenge);
-        echo "<br/>" . "Generiertes Passwort: " . "<br/>" . htmlspecialchars($passwort);
-    }
-} else {
-    echo "Keine Zahl eingegeben.";
-}
-?>
+    ?>
+    <?php else: ?>
+        <?php 
+            $kleine_buchstaben = "abcdefghijklmnopqrstuvwxyz";
+            $grosse_buchstaben = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            $zahlen = "0123456789";
+            $symbole = "!@#$%^&*()_-+=?><[]";
+            $zusammengesetzt = $kleine_buchstaben . $grosse_buchstaben . $zahlen . $symbole;
+            $passwort = substr(str_shuffle($zusammengesetzt), 0, $laenge);
+        ?>
+        <div class="sectionHeader">Generiertes Passwort:</div>
+            <?php htmlspecialchars($passwort); ?>
+    <?php endif; ?>
+<?php else: ?>
+    <p>Keine Zahl eingegeben.</p>
+<?php endif; ?>
