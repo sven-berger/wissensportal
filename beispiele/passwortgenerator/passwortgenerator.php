@@ -1,5 +1,6 @@
 <?php 
     $laenge = 15;
+    
     $kleine_buchstaben = "abcdefghijklmnopqrstuvwxyz";
     $grosse_buchstaben = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     $zahlen = "0123456789";
