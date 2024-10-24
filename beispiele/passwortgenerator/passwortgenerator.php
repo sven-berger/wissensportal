@@ -1,13 +1,13 @@
 <?php 
-    $laenge = 15;
+$laenge = 15;
+
+$kleine_buchstaben = "abcdefghijklmnopqrstuvwxyz";
+$grosse_buchstaben = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+$zahlen = "0123456789";
+$symbole = "!@#$%^&*()_-+=?><[]";
     
-    $kleine_buchstaben = "abcdefghijklmnopqrstuvwxyz";
-    $grosse_buchstaben = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    $zahlen = "0123456789";
-    $symbole = "!@#$%^&*()_-+=?><[]";
+$zusammengesetzt = $kleine_buchstaben . $grosse_buchstaben . $zahlen . $symbole;
+$passwort = substr(str_shuffle($zusammengesetzt), 0, $laenge);
     
-    $zusammengesetzt = $kleine_buchstaben . $grosse_buchstaben . $zahlen . $symbole;
-    $passwort = substr(str_shuffle($zusammengesetzt), 0, $laenge);
-    
-    echo $passwort;
+echo "Das Passwort lautet: " . $passwort;
 ?>
