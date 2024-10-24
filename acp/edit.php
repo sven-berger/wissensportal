@@ -24,6 +24,7 @@ try {
         $php_snippet_alternativ = $_POST['php_snippet_alternativ'];
         $python_snippet = $_POST['python_snippet'];
         $javascript_snippet = $_POST['javascript_snippet'];
+        $mitteilung_snippet = $_POST['mitteilung_snippet'];
 
         $sql = "UPDATE snippets SET title = :title, url = :url, description = :description, php_snippet = :php_snippet, php_snippet_alternativ = :php_snippet_alternativ, python_snippet = :python_snippet, javascript_snippet = :javascript_snippet WHERE id = :id";
         $stmt = $connection->prepare($sql);
@@ -71,6 +72,10 @@ try {
 
     <label for="javascript_snippet">JavaScript Snippet:</label>
     <textarea name="javascript_snippet"><?php echo htmlspecialchars($snippet['javascript_snippet']); ?></textarea>
+
+    <label for="mitteilung_snippet">Mitteilung:</label>
+    <textarea name="mitteilung_snippet"><?php echo htmlspecialchars($snippet['mitteilung_snippet']); ?></textarea>
+    
 
     <input type="submit" value="Speichern">
 </form>

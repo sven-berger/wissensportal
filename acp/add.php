@@ -26,6 +26,9 @@
     <label for="javascript_snippet">JavaScript Snippet:</label>
     <textarea name="javascript_snippet"></textarea><br>
 
+    <label for="mitteilung_snippet">Mitteilung:</label>
+    <textarea name="mitteilung_snippet"></textarea>
+
     <input type="submit" value="Speichern">
 </form>
 
