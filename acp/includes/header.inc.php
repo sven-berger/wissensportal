@@ -29,9 +29,15 @@
 <div class="main">
     <div class="content">
         <h2><?php echo $pageTitle; ?></h2>
-        <?php if (!empty($mitteilung_snippet)) {
-            echo $mitteilung_snippet;
-        }
+        <?php
+            $snippetName = $_GET['snippet'];
+            $sql = "SELECT * FROM snippets WHERE url = :url";
+            $stmt = $connection->prepare($sql);    
+            $stmt->execute([':url' => $snippetName]);
+            $snippet = $stmt->fetch(PDO::FETCH_ASSOC);
+            if (!empty($mitteilung_snippet)) {
+                echo $mitteilung_snippet;
+            }
         ?>
         <section class="section">
             <div class="sectionContent">
