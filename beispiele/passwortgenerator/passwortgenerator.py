@@ -1,6 +1,7 @@
 import random
 
 laenge = int(input("Bitte gib die gewünschte Länge ein (Maximal 81 Zeichen!): "))
+
 if 1 <= laenge <= 81:
     kleine_buchstaben = "abcdefghijklmnopqrstuvwxyz"
     grosse_buchstaben = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
