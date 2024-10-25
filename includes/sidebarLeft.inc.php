@@ -30,6 +30,27 @@
         </ul>
     </div>
 </section>
+
+<div class="boxCapital">
+    <p>Assoziative Arrays / Einfaches Dictionarie</p>
+</div>
+<section class="sidebarBox">
+    <div class="boxContent">
+        <ul>
+        </ul>
+    </div>
+</section>
+
+<div class="boxCapital">
+    <p>Mehrdimensionale Arrays / Dictionaries</p>
+</div>
+<section class="sidebarBox">
+    <div class="boxContent">
+        <ul>
+        </ul>
+    </div>
+</section>
+
 <div class="boxCapital">
     <p>for-Schleife</p>
 </div>
