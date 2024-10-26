@@ -8,7 +8,7 @@
 
     <?php
         $snippetName = $_GET['snippet'];
-        $sql = "SELECT * FROM snippets WHERE url = :url";
+        $sql = "SELECT * FROM wissensportal WHERE url = :url";
         $stmt = $connection->prepare($sql);    
         $stmt->execute([':url' => $snippetName]);
         $snippet = $stmt->fetch(PDO::FETCH_ASSOC);

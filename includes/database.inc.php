@@ -1,8 +1,8 @@
 <?php
 
 $dsn = "mysql:host=localhost;dbname=wissensportal_system;";
-$username = "wissensportal_system";
-$password = "#%5TknX2";
+$username = "codevoyage_system";
+$password = "jD=0m7!I";
 
 try {
     $connection = new PDO($dsn, $username, $password);
