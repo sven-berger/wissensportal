@@ -3,7 +3,7 @@
     $pageTitle = 'Wissensportal';
     require_once ($_SERVER['DOCUMENT_ROOT'] . "/acp/includes/header.inc.php");
     try {
-        $sql = "SELECT * FROM snippets ORDER BY id DESC";
+        $sql = "SELECT * FROM wissensportal ORDER BY id DESC";
         $stmt = $connection->query($sql);
         $snippets = $stmt->fetchAll(PDO::FETCH_ASSOC);
     } catch (PDOException $e) {
