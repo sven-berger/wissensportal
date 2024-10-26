@@ -1,6 +1,6 @@
 <?php
 
-$dsn = "mysql:host=localhost;dbname=wissensportal_system;";
+$dsn = "mysql:host=localhost;dbname=codevoyage_system;";
 $username = "codevoyage_system";
 $password = "jD=0m7!I";
 

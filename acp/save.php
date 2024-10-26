@@ -15,7 +15,7 @@ $mitteilung_snippet = $_POST['mitteilung_snippet'];
 
 
 
-$sql = "INSERT INTO snippets (url, title, description, php_snippet, php_snippet_alternativ, python_snippet, javascript_snippet, mitteilung_snippet) 
+$sql = "INSERT INTO wissensportal (url, title, description, php_snippet, php_snippet_alternativ, python_snippet, javascript_snippet, mitteilung_snippet) 
         VALUES (:url, :title, :description, :php_snippet, :php_snippet_alternativ, :python_snippet, :javascript_snippet, :mitteilung_snippet)";
 $stmt = $connection->prepare($sql);
 $stmt->execute([
